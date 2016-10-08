@@ -1,0 +1,29 @@
+<template>
+  <section>
+    <h2>Bad Teams League Standings</h2>
+	<table>
+		<thead>
+			<tr>
+				<th>Owner</th>
+				<th>Wins</th>
+				<th>Losses</th>
+				<th>Teams</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="standing" repeat.for="standing of standings">
+				<td>${standing.owner}</td>
+				<td class="number">${standing.wins}</td>
+				<td class="number">${standing.losses}</td>
+				<td>
+					<div class="logo" repeat.for="team of standing.teams">
+						<img src="/images/${team.name}.png" />
+						<span>${team.wins} - ${team.losses}</span>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+    
+  </section>
+</template>

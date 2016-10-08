@@ -1,0 +1,8 @@
+h2 {margin: 4px; font-family: arial; font-size: xx-large}
+
+table { font-family: arial; margin: 4px; }
+th, td { padding: 4px 4px 4px 4px !important}
+tr:nth-child(even) { background-color: #eeeeee }
+div.logo {display: inline }
+tr.standing td {font-weight: bold; text-align: center; }
+td.number { font-size: x-large; }

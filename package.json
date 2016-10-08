@@ -1,0 +1,16 @@
+{
+  "name": "bad_teams",
+  "version": "1.0.0",
+  "description": "Bad teams standings update",
+  "main": "app.js",
+  "scripts": {
+    "test": "show"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.2",
+    "osmosis": "^1.1.0",
+    "request": "^2.67.0"
+  }
+}
