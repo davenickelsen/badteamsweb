@@ -19,17 +19,10 @@ app.get("/standings", function(req, res) {
 	badTeams.beginGetStandings(callback, errorHandler);
 });
 
-try {
+var envPort = process.env.PORT || 3000;
 
-var server = app.listen(80, function () {
+var server = app.listen(envPort, function () {
    var host = server.address().address;
    var port = server.address().port;
    console.log("Example app listening at http://%s:%s", host, port);
 });
-
-}
-catch (ex) 
-{
-	console.log("HUGE FAIL");
-	console.log(ex);
-}
