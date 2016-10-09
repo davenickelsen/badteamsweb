@@ -11,7 +11,7 @@ export class Home {
     http.configure(config => {
       config
         .useStandardConfiguration()
-        .withBaseUrl('http://localhost:3000/');
+        .withBaseUrl('https://badteamsweb.herokuapp.com/');
     });
 
     this.http = http;
