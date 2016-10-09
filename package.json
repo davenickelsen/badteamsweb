@@ -4,7 +4,7 @@
   "description": "Bad teams standings update",
   "main": "app.js",
   "scripts": {
-    "test": "show"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
