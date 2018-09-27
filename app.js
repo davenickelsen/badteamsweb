@@ -18,7 +18,7 @@ app.get("/standings", function(req, res) {
 		res.send(JSON.stringify(standings));
 	};
 	var errorHandler = function(data) {
-		throw data;	
+		  console.error(data);
 	}
 	console.log("Request for standings issued.");
 	var badTeams = require("./badTeams");

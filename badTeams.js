@@ -22,7 +22,7 @@ function groupStandingsByOwner(teams) {
 	for (var c in config) {
 		var ownerName = config[c].owner;
 		var teamNames = config[c].teams;
-		var ownerTeams = findTeamsByName(teams, teamNames);	
+		var ownerTeams = findTeamsByName(teams, teamNames);
 		sortByWinsDescending(ownerTeams);
 		standings.push({"owner": ownerName, "teams": ownerTeams, "wins": sumWins(ownerTeams), "losses": sumLosses(ownerTeams)});
 	}
@@ -72,7 +72,8 @@ function beginGetConfig() {
 
 function endGetConfig(err, data) {
 	if (err) {
-		throw err;
+		console.error(err);
+		return;
 	}
 	config = JSON.parse(data);
 	beginReadStandings();
